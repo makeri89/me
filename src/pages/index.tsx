@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <Head>
         <title>makeri89</title>
       </Head>
-      <Flex align="center" direction="column" mt="100px" gap="40px">
+      <Flex align="center" direction="column" m="3em" mt="100px" gap="40px">
         <NameBox name="makeri89" />
         <InfoPage />
       </Flex>

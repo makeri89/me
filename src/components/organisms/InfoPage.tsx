@@ -3,7 +3,7 @@ import InfoCard from '@ui/molecules/Infocard'
 
 const InfoPage = () => {
   return (
-    <Flex gap="40px">
+    <Flex gap="40px" wrap="wrap">
       <InfoCard title="Work">
         <Box>
           <Text>Software developer at</Text>
