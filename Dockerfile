@@ -15,7 +15,7 @@ COPY . .
 RUN pnpm run build
 
 # Run
-FROM busybox as run
+FROM busybox:1.35 as run
 WORKDIR /app
 COPY --from=build /app/dist .
 CMD ["busybox", "httpd", "-f", "-v", "-p", "8080"]
