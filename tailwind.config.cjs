@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'mono': ['"Share Tech Mono"', 'monospace']
+				nunito: '"Nunito Sans Variable"'
 			},
 			boxShadow: {
 				card: '0px 5px 8px 1px #64748b'
