@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets'
 
-const images = import.meta.glob('/src/assets/*.{png,jpg,jpeg,svg}')
+// const images = import.meta.glob('/src/assets/*.{png,jpg,jpeg,svg}')
 
 const buzzWords = [
 	'Backend',
@@ -63,7 +63,7 @@ const buzzWords = [
   </div>
   <div class="">
     <a href="https://github.com/makeri89">
-      <Image src={images['/src/assets/github-mark-white.svg']()} alt="GitHub logo" class="w-6 lg:w-8" />
+      <Image src="/github-mark-white.svg" alt="GitHub logo" class="w-6 lg:w-8" width="12" height="12" />
     </a>
   </div>
 </nav>
