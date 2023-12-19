@@ -1,6 +1,4 @@
 ---
-import '@fontsource/share-tech-mono'
-
 export interface Props {
 	title: string;
 }
@@ -17,7 +15,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-slate-900 text-slate-50 font-mono">
+	<body class="bg-forest backdrop-blur-xl bg-top text-parsnip min-h-screen">
 		<slot />
 	</body>
 </html>

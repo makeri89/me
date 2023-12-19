@@ -1,0 +1,68 @@
+---
+import { Image } from 'astro:assets'
+import githubLogo from '../images/github-mark-white.svg'
+
+const buzzWords = [
+	'Backend',
+	'Frontend',
+	'Fullstack',
+	'JavaScript',
+	'TypeScript',
+  'Python',
+  'Java',
+	'Node.js',
+	'Express',
+  'Flask',
+  'React',
+  'Next.js',
+  'Spring Boot',
+	'Terraform',
+	'AWS',
+	'Azure',
+  'Git',
+	'Github',
+	'Github Actions',
+  'Azure DevOps',
+  'CI/CD',
+  'Cypress',
+  'Selenium',
+  'Docker',
+  'Kubernetes',
+  'PostgreSQL',
+  'MongoDB',
+  'Redis',
+  'A11y',
+
+]
+---
+<nav class="flex flex-col lg:justify-between gap-8 lg:sticky lg:top-0 max-h-screen lg:min-h-screen py-12 lg:py-24">
+  <div class="flex flex-col gap-4">
+    <h1 class="text-3xl 2xl:text-5xl font-bold">Markus&nbsp;Kaihola</h1>
+    <p class="text-3xl">Software developer.</p>
+    <!-- <ul class="flex flex-col gap-2 lg:gap-6 text-md lg:text-xl mt-8">
+      <li>
+        <a class="hover:underline hover:cursor-pointer">About me.</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:cursor-pointer">My work.</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:cursor-pointer">Contact.</a>
+      </li>
+    </ul> -->
+    <div class="hidden lg:block lg:mt-16">
+      <h3 class="text-lg font-bold">Buzzwords.</h3>
+      <p class="mb-2">These are some of the techonologies that I have used</p>
+      <div class="flex flex-wrap gap-4">
+        {buzzWords.map((buzzWord) => (
+          <span class="rounded-md px-2 py-1 border-2 border-rock border-solid">{buzzWord}</span>
+          ))}
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <a href="https://github.com/makeri89">
+      <Image src={githubLogo} alt="GitHub logo" class="w-6 lg:w-8" />
+    </a>
+  </div>
+</nav>
