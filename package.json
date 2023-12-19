@@ -8,15 +8,18 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier --write . --plugin=prettier-plugin-astro"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.3",
     "@astrojs/vercel": "^6.1.0",
     "@fontsource-variable/nunito-sans": "^5.0.9",
-    "@fontsource/nunito-sans": "^5.0.8",
-    "@fontsource/share-tech-mono": "^4.5.9",
     "astro": "^4.0.6",
     "tailwindcss": "^3.3.7"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "prettier-plugin-astro": "^0.12.2"
   }
 }

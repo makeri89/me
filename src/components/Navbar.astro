@@ -1,16 +1,21 @@
 ---
-import { Image } from 'astro:assets'
+import { Image } from "astro:assets";
 
-import { buzzWords } from './buzzwords'
+import { buzzWords } from "./buzzwords";
 ---
-<nav class="flex flex-col lg:justify-between gap-8 lg:sticky lg:top-0 max-h-screen lg:min-h-screen py-12 lg:py-24">
+
+<nav
+  class="flex flex-col lg:justify-between gap-8 lg:sticky lg:top-0 max-h-screen lg:min-h-screen py-12 lg:py-24"
+>
   <div class="flex flex-col gap-4">
     <h1 class="text-4xl 2xl:text-5xl font-bold">Markus&nbsp;Kaihola</h1>
     <div>
       <p class="text-3xl">Software developer.</p>
       <p class="text-lg">@makeri89</p>
     </div>
-    <ul class="hidden lg:flex flex-col gap-2 lg:gap-6 text-md lg:text-xl mt-4 xl:mt-8">
+    <ul
+      class="hidden lg:flex flex-col gap-2 lg:gap-6 text-md lg:text-xl mt-4 xl:mt-8"
+    >
       <li class="p-1">
         <a class="hover:underline" href="#">About me.</a>
       </li>
@@ -25,15 +30,25 @@ import { buzzWords } from './buzzwords'
       <h3 class="text-lg font-bold">Buzzwords.</h3>
       <p class="mb-2">These are some of the techonologies that I have used</p>
       <div class="flex flex-wrap gap-3">
-        {buzzWords.map((buzzWord) => (
-          <span class="rounded-md px-2 py-1 border-2 border-rock border-solid hover:bg-carrot/40 hover:shadow-lg hover:shadow-beet hover:transition-colors hover:duration-500 hover:ease-out hover:delayd-0 motion-reduce:transition-none motion-reduce:hover:shadow-none">{buzzWord}</span>
-          ))}
+        {
+          buzzWords.map((buzzWord) => (
+            <span class="rounded-md px-2 py-1 border-2 border-rock border-solid hover:bg-carrot/40 hover:shadow-lg hover:shadow-beet hover:transition-colors hover:duration-500 hover:ease-out hover:delayd-0 motion-reduce:transition-none motion-reduce:hover:shadow-none">
+              {buzzWord}
+            </span>
+          ))
+        }
       </div>
     </div>
   </div>
   <div class="">
     <a href="https://github.com/makeri89">
-      <Image src="/github-mark-white.svg" alt="GitHub logo" class="w-6 lg:w-8" width="12" height="12" />
+      <Image
+        src="/github-mark-white.svg"
+        alt="GitHub logo"
+        class="w-6 lg:w-8"
+        width="12"
+        height="12"
+      />
     </a>
   </div>
 </nav>
