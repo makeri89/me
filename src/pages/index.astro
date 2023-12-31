@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import WorkExperience from "../components/WorkExperience.astro";
 import Project from "../components/Project.astro";
+
+import workExperience from "../lib/workExperience.json"
 ---
 
 <Layout title="makeri89">
@@ -36,21 +38,9 @@ import Project from "../components/Project.astro";
         <div>
           <h2 class="text-2xl font-bold underline">Experience.</h2>
         </div>
-        <WorkExperience
-          title="Futurice"
-          period="Summer 2023"
-          body="I worked at Futurice for the summer of 2023 as a Full Stack Developer. I got to work on a large project that was already several years in the making. My tasks ranged from managing SSL certificates to implementing new frontend features to updating virtual machines with Terraform."
-        />
-        <WorkExperience
-          title="Kuormat.com"
-          period="October 2021 - May 2023"
-          body="I got real hands-on experience with all aspects of software development at Kuormat.com start-up. I worked as part of a three-person team so we all had big responsibilities. In addition to writing the application, I worked a lot on developing our own agile ways of working."
-        />
-        <WorkExperience
-          title="University of Helsinki"
-          period="January 2021 - present"
-          body="I have worked as a teaching and research assistant on multiple courses at the University of Helsinki. My role has varied a lot on the courses: in addition to working as an assistant on a few project courses, for a year I ran the daily operations of some of the largest courses of the university, Introduction to Programming and Advanced Programming."
-        />
+        {workExperience.map((job) => (
+          <WorkExperience title={job.company} period={job.period} body={job.description} />
+        ))}
       </section>
       <section id="projects" class="flex flex-col gap-8 flex-wrap">
         <div>
