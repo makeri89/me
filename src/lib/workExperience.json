@@ -1,5 +1,10 @@
 [
   {
+    "company": "Digia",
+    "period": "October 2023 - March 2024",
+    "description": "I worked as a Software Robotics (RPA) Developer at Digia. My tasks included building completely new robots with Selenium and PyWinAuto and also doing support work for older robots."
+  },
+  {
     "company": "Futurice",
     "period": "Summer 2023",
     "description": "I worked at Futurice for the summer of 2023 as a Full Stack Developer. I got to work on a large project that was already several years in the making. My tasks ranged from managing SSL certificates to implementing new frontend features to updating virtual machines with Terraform."
