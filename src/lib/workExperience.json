@@ -1,5 +1,10 @@
 [
   {
+    "company": "Veikkaus",
+    "period": "March 2024 - November 2025",
+    "description": "As a DevOps Engineer at Veikkaus, I worked closely with GitLab runners and CI/CD pipelines. We provided runners for all software teams within Veikkaus and ensured smooth integration with their development workflows."
+  },
+  {
     "company": "Digia",
     "period": "October 2023 - March 2024",
     "description": "I worked as a Software Robotics (RPA) Developer at Digia. My tasks included building completely new robots with Selenium and PyWinAuto and also doing support work for older robots."
